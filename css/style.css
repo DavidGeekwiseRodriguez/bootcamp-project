@@ -1,0 +1,94 @@
+body {
+    background-color: lightgreen;
+    font-family: 'Josefin Sans';
+}
+
+.header {
+    display: inline-block;
+    width: 100%;
+    background-color: lightblue;
+    border-radius: 12px;
+}
+
+.header .test {
+    color: white;
+    text-shadow: 2px 2px black;
+    float: left;
+    margin-left: 20px;
+    transition: all .5s ease;
+}
+
+.test:hover {
+    color: black;
+    text-shadow: 2px 2px white;
+}
+
+.header .nav {
+    float: right;
+    margin-top: 28px;
+}
+
+.header .nav .nav-link {
+    display: inline-block;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 20px;
+    margin-right: 25px;
+    transition: all .5s ease;
+}
+
+.header .nav .nav-link:hover {
+    color: black;
+    text-shadow: 2px 2px white;
+}
+
+#my-btn {
+    background-color: pink;
+    box-shadow: 5px 8px 8px #888888;
+    border-radius: 5px;
+}
+
+/*ABOUT STYLES*/
+
+.content-1 {
+    margin: 20px;
+    margin-top: 35px;
+}
+
+.left {
+    display: inline-block;
+}
+
+.left .content-img {
+    height: 350px;
+}
+
+.right {
+    float: right;
+    width: 37%;
+    margin-top: 5%;
+}
+
+.right p {
+    text-align: center;
+}
+
+.content-2 {
+    margin: 20px;
+    margin-top: 35px;
+}
+
+.content-2 .left {
+    float: right;
+}
+
+.content-2 .right {
+    float: left;
+}
+
+/*CONTACT STYLES*/
+
+.google-map {
+    text-align: center;
+    margin-top: 30px;
+}
