@@ -1,31 +1,37 @@
+html {
+    height: 100%;
+}
+
 body {
     background-color: lightgreen;
     font-family: 'Josefin Sans';
 }
 
 .header {
-    display: inline-block;
-    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
     background-color: lightblue;
-    border-radius: 12px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 0 auto 0 auto;
 }
 
 .header .test {
     color: white;
     text-shadow: 2px 2px black;
-    float: left;
-    margin-left: 20px;
+    margin-left: 70px;
+    font-size: 45px;
     transition: all .5s ease;
 }
 
 .test:hover {
     color: black;
-    text-shadow: 2px 2px white;
+    text-shadow: 2px 2px white, 3px 3px black, 4px 4px white, 5px 5px black;
 }
 
 .header .nav {
-    float: right;
-    margin-top: 28px;
+    align-self: center;
 }
 
 .header .nav .nav-link {
@@ -39,13 +45,26 @@ body {
 
 .header .nav .nav-link:hover {
     color: black;
-    text-shadow: 2px 2px white;
+    text-shadow: 1px 1px white, 3px 3px 3px white, 4px 4px 3px black;
 }
 
-#my-btn {
-    background-color: pink;
-    box-shadow: 5px 8px 8px #888888;
-    border-radius: 5px;
+.first {
+    height: 300px;
+}
+
+.second {
+    text-align: center;
+}
+
+.third {
+    height: 350px;
+}
+
+.second h1 {
+    font-family: 'Josefin Sans';
+    font-size: 5em;
+    color: white;
+    text-shadow: 2px 2px black, 3px 3px white, 4px 4px 5px black;
 }
 
 /*ABOUT STYLES*/
@@ -53,9 +72,17 @@ body {
 .content-1 {
     margin: 20px;
     margin-top: 35px;
+    transition: all .7s ease;
 }
 
-.left {
+.content-1:hover {
+    background-color: lightblue;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px black solid;
+}
+
+.content-1 .left {
     display: inline-block;
 }
 
@@ -63,27 +90,68 @@ body {
     height: 350px;
 }
 
-.right {
+.content-1 .right {
     float: right;
     width: 37%;
-    margin-top: 5%;
-}
-
-.right p {
+    margin-top: 6%;
+    margin-right: 25px;
     text-align: center;
 }
 
 .content-2 {
     margin: 20px;
     margin-top: 35px;
+    transition: all .6s ease;
+}
+
+.content-2:hover {
+    background-color: lightblue;
+    padding: 15px;
+    border: 1px black solid;
+    border-radius: 8px;
 }
 
 .content-2 .left {
-    float: right;
+    float: left;
+    width: 37%;
+    margin-top: 5%;
+    text-align: center;
 }
 
 .content-2 .right {
-    float: left;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right .content-img {
+    height: 350px;
+    float: right;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background-color: lightblue;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.footer-logos {
+    font-size: 40px;
+}
+
+.footer-logos a i {
+    color: black;
+    transition: all .5s ease;
+}
+
+.footer-logos a i:hover {
+    text-shadow: 2px 2px white;
 }
 
 /*CONTACT STYLES*/
